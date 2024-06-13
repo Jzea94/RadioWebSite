@@ -1,6 +1,8 @@
 function About () {
   return (
-    <h2>About</h2>
+    <div className='contact-pages'>
+      <h2>About</h2>
+    </div>
   )
 }
 

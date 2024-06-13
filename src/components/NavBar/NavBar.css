@@ -1,10 +1,23 @@
 .navbar {
   background-color: #333; /* Color de fondo */
-  padding: 10px 0; /* Espaciado interno */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
+  padding: 10px; /* Espaciado interno */
+  box-sizing: border-box;
+  z-index: 1000;
+  overflow-x: hidden;
+  border-bottom: 2px solid #ad99ccf5;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.945), #222222d7) padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo > img {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 10px;
 }
 
 .navbar-nav {
@@ -12,12 +25,13 @@
   padding: 0;
   margin: 0;
   display: flex; /* Flex para alinear los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  }
+  flex: 1;
+  justify-content: center;
+}
   
 .nav-item {
   margin: 0 20px; /* Espaciado horizontal entre elementos */
-  }
+}
     
 .nav-link {
   color: #fff; /* Color del texto */
@@ -26,7 +40,7 @@
   }
 
 .nav-link:hover {
-  color: #3d3feb; /* Cambia el color del texto al pasar el ratón */
+  color: #ffffffbd; /* Cambia el color del texto al pasar el ratón */
 }
 
 /*
@@ -38,6 +52,5 @@ is active so you can use CSS to style it.
 */
 .navbar a.active {
   font-weight: bold; /* Hace el enlace activo más destacado */
-  color: #6bf335;
+  color: #ad99cc;
 }
-  
