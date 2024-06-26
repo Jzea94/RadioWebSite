@@ -13,6 +13,9 @@
   gap: 55px;
   padding: 50px;
   box-sizing: border-box;
-  /* background:
-    radial-gradient(circle closest-side at 50% 50%, rgba(58, 1, 15, 0.288) 10%, #0a0a0a 150%); */
+  background:    
+    radial-gradient(ellipse closest-corner at 10% 45%, #090230c0 10%, #100230c0 40%, #000000fd 100%, transparent),
+    radial-gradient(circle at 50% 30%, #150638c0 10%, #06011dbe 25%, transparent 40%),
+    radial-gradient(circle at 95% 90%, #070046c0 10%, #01051dc0 20%, transparent 30%),
+    #000000;
 }

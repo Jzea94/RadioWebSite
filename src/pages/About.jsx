@@ -5,6 +5,7 @@ function About () {
       <p>aca va una breve reseña de nuestra misión</p>
       <h2>Meet our team</h2>
       <p>acá vendrian renderizada las PersonCards</p>
+      <p>probando...👌</p>
     </div>
   )
 }
