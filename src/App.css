@@ -6,16 +6,119 @@
   width: 100vw;
 }
 
-.contact-pages {
+.content-player {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  width: 100vw;
+}
+
+.content-pages {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 55px;
-  padding: 50px;
+  padding: 20px 0;
   box-sizing: border-box;
-  background:    
-    radial-gradient(ellipse closest-corner at 10% 45%, #090230c0 10%, #100230c0 40%, #000000fd 100%, transparent),
-    radial-gradient(circle at 50% 30%, #150638c0 10%, #06011dbe 25%, transparent 40%),
-    radial-gradient(circle at 95% 90%, #070046c0 10%, #01051dc0 20%, transparent 30%),
-    #000000;
+  background:
+    linear-gradient(#15063854, #06011d73 70%, rgba(0, 0, 0, 0.945) 90%);
+}
+
+/* Estilos para la sección ABOUT */
+
+.about-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.about-separator {
+  border: none;
+  border-top: 0.5px solid #ffffff;
+  margin: 0 300px;
+}
+
+.about-info {
+  padding: 50px 400px;
+  gap: 20px;
+}
+
+/* .about-team {
+  background-image: url('../public/background.png');
+  background-size:cover;
+  background-position: center;
+  mask-image: radial-gradient(rgb(0, 0, 0) 50%, rgba(28, 204, 28, 0.884) 100%);
+} */
+
+/* .about-team {
+  background-color: #176ddd;
+} */
+
+.about-mision {
+  background-color: #21cf64;
+}
+
+.about-mision,
+.about-team {
+  padding: 50px 400px;
+}
+
+.about-info strong {
+  background-image:
+  linear-gradient(to bottom, #144728, #21cf64);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-info h1,
+.about-mision h1,
+.about-team h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para dispositivos moviles */
+
+@media (max-width: 600px) {
+  .content-player {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+  }
+
+  .about-pages {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .about-separator {
+    border: none;
+    border-top: 0.5px solid #ffffff;
+    margin: 0 30px;
+  }
+
+  .about-info h1,
+  .about-mision h1,
+  .about-team h1 {
+    font-size: 36px;
+  }
+
+  .about-info,
+  .about-mision,
+  .about-team {
+    margin: 0;
+    padding: 50px 30px;
+  }
 }

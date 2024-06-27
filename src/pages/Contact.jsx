@@ -2,7 +2,7 @@ import ContactForm from '../components/ContactForm/ContactForm'
 
 function Contact () {
   return (
-    <div className='contact-pages'>
+    <div className='content-pages'>
       <ContactForm />
     </div>
   )

@@ -32,7 +32,7 @@ function ContactForm () {
   }
 
   return (
-    <main>
+    <main className='main-section-contact'>
       <div className='section-contact'>
         <h2>Trabajemos juntos</h2>
         <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible. ¡Esperamos colaborar contigo pronto!</p>

@@ -1,0 +1,37 @@
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  padding: 2px;
+}
+
+.player-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: black;
+  z-index: 1;
+}
+
+.player::before {
+  content: "";
+  position: absolute;
+  height: 900px;
+  width: 900px;
+  background-image: conic-gradient(transparent 50deg, #8a5dcef5, #11d1d8, #1822acf5);
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

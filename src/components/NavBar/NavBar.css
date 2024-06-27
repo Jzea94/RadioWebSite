@@ -5,7 +5,8 @@
   box-sizing: border-box;
   z-index: 1000;
   overflow-x: hidden;
-  border-bottom: 2px solid #ad99ccf5;
+  border-bottom: 2px solid #ffffff;
+  /* border-bottom: 2px solid #ad99ccf5; */
   background:
     linear-gradient(rgba(0, 0, 0, 0.945), #222222d7) padding-box;
   display: flex;
@@ -52,5 +53,6 @@ is active so you can use CSS to style it.
 */
 .navbar a.active {
   font-weight: bold; /* Hace el enlace activo más destacado */
-  color: #ad99cc;
+  color: #ffffff;
+  /* color: #ad99cc; */
 }
