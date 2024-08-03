@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+}
+
+/*Estilos para img-background*/
+
+.img-background {
+  overflow: hidden;
+  object-fit: contain;
+  display: block;
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+
+.img-background:hover {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.img-background img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+.img-background img:hover {
+  transform: scale(1.9) translateX(25%); /* Aumenta el tamaño y desplaza hacia la derecha */
+}
+
+/*Estilos para Social Info*/
+.social-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 250px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.social-info img{
+  width: 15px;
+  height: 15px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card:hover .social-info {
+  opacity: 1;
+}

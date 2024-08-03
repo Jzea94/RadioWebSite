@@ -9,16 +9,12 @@ function About () {
           </p>
         </div>
 
-        <hr className='about-separator' />
-
         <div className='about-mision'>
           <h1>Nuestra misión</h1>
           <p>
             Creemos que la música tiene el poder de unir a las personas, y en La Romántica, queremos ser el puente que conecte corazones a través de la salsa romántica
           </p>
         </div>
-
-        <hr className='about-separator' />
 
         <div className='about-team'>
           <h1>Nuestro equipo</h1>

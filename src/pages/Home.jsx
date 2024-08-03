@@ -1,3 +1,5 @@
+import Card from '../components/Card/Card'
+
 function Home () {
   return (
     <div className='content-pages'>
@@ -8,7 +10,7 @@ function Home () {
         el sitio web.
       </p>
 
-      <div className='las-10-romanticas' />
+      <Card />
     </div>
   )
 }
