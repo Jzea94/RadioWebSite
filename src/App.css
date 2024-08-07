@@ -37,12 +37,6 @@
   font-size: 18px;
 }
 
-.about-separator {
-  border: none;
-  border-top: 0.5px solid #ffffff;
-  margin: 0 300px;
-}
-
 .about-info {
   padding: 50px 400px;
   gap: 20px;
@@ -55,9 +49,15 @@
   mask-image: radial-gradient(rgb(0, 0, 0) 50%, rgba(28, 204, 28, 0.884) 100%);
 } */
 
-/* .about-team {
-  background-color: #176ddd;
-} */
+
+.about-card {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
 
 .about-mision {
   background-color: #0c458f;
@@ -104,10 +104,11 @@
     font-size: 15px;
   }
 
-  .about-separator {
-    border: none;
-    border-top: 0.5px solid #ffffff;
-    margin: 0 30px;
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .about-info h1,

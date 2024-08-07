@@ -1,9 +1,9 @@
 .card {
   display: flex;
-  border: 1px solid transparent;
-  border-radius: 5px;
   width: 200px;
   height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /*Estilos para img-background*/
@@ -11,14 +11,14 @@
 .img-background {
   overflow: hidden;
   object-fit: contain;
-  display: block;
   width: 200px;
   height: 250px;
   position: relative;
+  border-radius: 5px;
 }
 
-.img-background:hover {
-  border: 1px solid grey;
+.card:hover {
+  border: 0.1rem solid rgb(78, 78, 78);
   border-radius: 5px;
 }
 
@@ -28,11 +28,11 @@
   transition: transform 0.5s ease-in-out;
 }
 .img-background img:hover {
-  transform: scale(1.9) translateX(25%); /* Aumenta el tamaño y desplaza hacia la derecha */
+  transform: scale(2) translateX(25%); /* Aumenta el tamaño y desplaza hacia la derecha */
 }
 
 /*Estilos para Social Info*/
-.social-info {
+.social-information {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,21 +40,25 @@
   box-sizing: border-box;
   padding: 10px;
   height: 250px;
-  opacity: 0;
   transition: opacity 0.5s ease;
 }
 
-.social-info img{
-  width: 15px;
-  height: 15px;
+.social-information img {
+  width: 18px;
 }
 
 .icons {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
 }
 
-.card:hover .social-info {
+.card:hover .social-information {
   opacity: 1;
+  z-index: 1;
+}
+
+.card:hover .social-information ~ .img-background img {
+  transform: scale(2) translateX(25%);
 }

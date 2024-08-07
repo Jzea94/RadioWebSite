@@ -1,3 +1,5 @@
+import Card from '../components/Card/Card.jsx'
+
 function About () {
   return (
     <main className='content-pages'>
@@ -18,9 +20,14 @@ function About () {
 
         <div className='about-team'>
           <h1>Nuestro equipo</h1>
-          <p>
+          {/* <p>
             Detrás de La Romántica hay un equipo apasionado por la música y el romance. Estamos comprometidos a brindarte la mejor selección de salsa romántica y a crear un ambiente donde puedas disfrutar, compartir y vivir tu amor por este maravilloso género.
-          </p>
+          </p> */}
+          <div className='about-card'>
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
       </section>
     </main>
